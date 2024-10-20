@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<string.h>
+// length of string
+int main()
+{
+   char name[30];
+   int count, i;
+   printf("Enter your name: ");
+   gets(name);
+   puts(name);
+   
+   // by using pre. defined function is this
+   //count=strlen(name);
+   //printf("String lenght is %d", count);
+   
+   while(name[i]!='\0')
+   {
+       count++;
+       i++;
+   }
+   
+   printf("Lnght of string is %d", count);
+   
+    return 0;
+}
